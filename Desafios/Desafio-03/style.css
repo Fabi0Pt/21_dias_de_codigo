@@ -1,0 +1,144 @@
+body {
+  font-family: "roboto", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calc {
+  width: 274px;
+}
+
+.calc .result {
+  border-radius: 0.5rem;
+
+  background-color: #1c191c;
+}
+
+.calc .result input {
+  width: 100%;
+  height: 100%;
+
+  text-align: right;
+  color: #fff;
+  font-size: 3rem;
+  padding: 0.2rem;
+
+  outline: none;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.ac .keyboard-btn {
+  border-radius: 0.5rem;
+  background-color: #ffff00;
+  width: 100%;
+}
+.ac .keyboard-btn:hover {
+  background-color: #ffd700;
+}
+.zero .keyboard-btn {
+  width: 100%;
+}
+
+.keyboard-operator {
+  background-color: #a9a9a9;
+  border-radius: 0.5rem;
+
+  border: none;
+  width: 4rem;
+  height: 4rem;
+
+  font-size: 2rem;
+}
+.keyboard-operator:hover {
+  background-color: #808080;
+}
+
+.keyboard-btn {
+  background-color: #dcdcdc;
+
+  border-radius: 0.5rem;
+
+  border: none;
+  width: 4rem;
+  height: 4rem;
+
+  font-size: 2rem;
+}
+.keyboard-btn:hover {
+  background-color: #a9a9a9;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-family: roboto, sans-serif;
+  text-transform: uppercase;
+  color: #666;
+}
+
+footer button {
+  width: 10rem;
+  height: 3rem;
+
+  background-color: #ee3769;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  margin-left: 1rem;
+
+  cursor: pointer;
+  transition: all 1s ease;
+
+  animation-name: shake-shake;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+footer button:hover {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  background-color: #666;
+
+  transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+}
+
+@keyframes shake-shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
