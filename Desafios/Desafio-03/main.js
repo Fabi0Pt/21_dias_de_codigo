@@ -17,8 +17,8 @@ let currentNumber = 0; //valor que esta no display
 let lastNumber = 0; // valor atual - sempre o second number
 let currentOperator = null;
 
-numberKeys.forEach((el) => {
-  el.addEventListener("click", (event) => {
+numberKeys.forEach((element) => {
+  element.addEventListener("click", (event) => {
     if (currentNumber === 0) {
       currentNumber = event.target.dataset.number;
     } else if (lastNumber === 0 && currentNumber != 0) {
@@ -45,6 +45,7 @@ operatorKeys.forEach((element) => {
         result = secondNumber;
       } else {
         const operation = operations[currentOperator];
+        console.log("QAAA", currentOperator);
         console.log("aqwr", operation);
         console.log("sahioa", currentNumber);
         result = operation(firstNumber, secondNumber);
