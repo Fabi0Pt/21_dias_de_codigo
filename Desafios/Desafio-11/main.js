@@ -1,5 +1,5 @@
 let page = 1;
-const url = "https://api.pexels.com/v1/search?query=forest+road&per_page=15";
+const url = "https://api.pexels.com/v1/search?query=forest+road&per_page=16";
 const gallery = document.querySelector("#gallery");
 const nextBtn = document.querySelector("#next");
 const prevBtn = document.querySelector("#previous");
